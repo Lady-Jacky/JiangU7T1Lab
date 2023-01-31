@@ -1,19 +1,21 @@
-public class Cat {
-    private String name;
+public class Car {
+    private String model;
+    private int miles;
 
-    public Cat(String name) {
-        this.name = name;
+    public Car(String model, int miles) {
+        this.model = model;
+        this.miles = miles;
     }
 
-    public String getName() {
-        return name;
+    public String getModel() {
+        return model;
     }
 
-    public void setName(String newName) {
-        name = newName;
+    public void setModel(String newName) {
+        model = newName;
     }
 
     public String toString() {
-        return name;
+        return model + " " + miles + "mi";
     }
 }
